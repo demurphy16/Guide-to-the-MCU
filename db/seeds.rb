@@ -13,14 +13,7 @@ User.destroy_all
 
 @admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
 
-@IronManMovie = Movie.create(
-  title: 'Iron Man',
-  description: '',
-  ImgUrl: '',
-  duration: 126,
-  position: 1,
-  characters: [@IronMan, @Obadiah]
-)
+
 
 @IronMan = Character.create(
   name: 'Tony Start',
@@ -28,7 +21,7 @@ User.destroy_all
   origin: 'Earth',
   powers: '',
   status: 'Hero',
-  rank: ,
+  rank: 9,
   accessory: 'Iron Man Suit'
 )
 @Obadiah = Character.create(
@@ -37,8 +30,17 @@ User.destroy_all
   origin: 'Earth',
   powers: '',
   status: 'Villian',
-  rank: '',
+  rank: 8,
   accessory: 'Iron Monger Suit'
+)
+
+@IronManMovie = Movie.create(
+  title: 'Iron Man',
+  description: '',
+  ImgUrl: '',
+  duration: 126,
+  position: 1,
+  characters: [@IronMan, @Obadiah]
 )
 
 puts "#{Movie.count} movies created"
