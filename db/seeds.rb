@@ -13,7 +13,7 @@ User.destroy_all
 
 @admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
 
-
+# IRONMAN
 
 @IronMan = Character.create(
   name: 'Tony Start',
@@ -33,6 +33,73 @@ User.destroy_all
   rank: 8,
   accessory: 'Iron Monger Suit'
 )
+@Rhodes = Character.create(
+  name: 'James Rhodes', 
+  description: '', 
+  origin: 'Earth',
+  powers: '',
+  status: 'Hero', 
+  rank: 2,
+  accessory: 'Iron Patriot Suit'
+)
+@Pepper = Character.create(
+  name: 'Pepper Potts', 
+  description: '', 
+  origin: 'Earth', 
+  powers: 'none', 
+  status: 'Hero', 
+  rank: 0, 
+  accessory: 'none', 
+  )
+@Yinsen = Character.create(
+  name: 'Yinsen', 
+  description:'', 
+  origin: 'Earth', 
+  powers: 'none', 
+  status: 'Hero', 
+  rank:'1',  
+  accessory: 'none', 
+)
+
+# HULK
+
+@Hulk = Character.create(
+  name: 'Bruce Banner',
+  description: '',
+  origin: 'Earth',
+  powers: '',
+  status: 'Hero',
+  rank: 7,
+  accessory: ''
+)
+@Abomination = Character.create(
+  name: 'Emil Blonksy',
+  description: '',
+  origin: 'Earth',
+  status: 'Villian',
+  rank: 5,
+  accessory: ''
+)
+@Ross = Character.create(
+  name: 'Thaddeus Ross',
+  description: '',
+  origin: 'Earth',
+  status: '',
+  rank: 1,
+  accessory: ''  
+)
+@Sterns = Character.create(
+  name: 'Samuel Sterns',
+  description: '',
+  origin: 'Earth',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+
+
+
+
 
 @IronManMovie = Movie.create(
   title: 'Iron Man',
@@ -40,8 +107,16 @@ User.destroy_all
   ImgUrl: '',
   duration: 126,
   position: 1,
-  characters: [@IronMan, @Obadiah]
+  characters: [@IronMan, @Obadiah, @Rhodes, @Pepper, @Yinsen]
 )
+@TheIncredibleHulk = Movie.create(
+  title: 'The Indredible Hulk',
+  description: '',
+  ImgUrl: '',
+  duration: '2h 15m',
+  position: 2,
+  characters: [@Hulk, @Abomination, @Ross, @Sterns]
+  )
 
 puts "#{Movie.count} movies created"
 puts "#{Character.count} characters created"
@@ -53,12 +128,7 @@ puts "#{Character.count} characters created"
 #   duration: '2h 6m', 
 #   position: 1
 #   )
-# @TheIncredibleHulk = Movie.create(
-#   title: 'The Indredible Hulk',
-#   imgUrl: ,
-#   duration: '2h 15m',
-#   position: 2
-#   )
+# 
 # @IronMan2 = Movie.create(
 #   title: 'Iron Man 2',
 #   imgUrl: ,
@@ -179,55 +249,3 @@ puts "#{Character.count} characters created"
 #   duration: '3h 2m',
 #   position: 21
 #   )
-
-
-# @Tony = Character.create(
-#   name: 'Iron Man', 
-#   description: 'Tony Stark', 
-#   rank: '9',
-#   movies: 'Iron Man', 
-#   powers: 'Superior Intellect', 
-#   accessories: 'Iron Man Suit', 
-#   status: 'Hero', 
-#   home: 'Earth', 
-#   movie: @IronMan)
-# @Obadiah = Character.create(
-#   name: 'Iron Monger', 
-#   description: 'Obadiah Stane', 
-#   rank: '3', 
-#   movies: '', 
-#   powers: 'Intelligence', 
-#   accessories: 'Iron Monger Suit', 
-#   status: 'Villian', 
-#   home: 'Earth', 
-#   movie: @IronMan)
-# @Rhodes = Character.create(
-#   name: 'James Rhodes', 
-#   description: '', 
-#   rank: '2', 
-#   movies: '', 
-#   powers: 'none', 
-#   accessories: 'Iron Patriot Suit', 
-#   status: 'Hero', 
-#   home: 'Earth', 
-#   movie: @IronMan)
-# @Pepper = Character.create(
-#   name: 'Pepper Potts', 
-#   description: '', 
-#   rank: '0', 
-#   movies: '', 
-#   powers: 'none', 
-#   accessories: 'none', 
-#   status: 'Hero', 
-#   home: 'Earth', 
-#   movie: @IronMan)
-# @Yinsen = Character.create(
-#   name: 'Yinsen', 
-#   description:'', 
-#   rank:'1', 
-#   movies: '', 
-#   powers: 'none', 
-#   accessories: 'none', 
-#   status: 'Hero', 
-#   home: 'Earth', 
-#   movie: @IronMan)
