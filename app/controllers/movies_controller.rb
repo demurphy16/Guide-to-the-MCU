@@ -5,12 +5,12 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.all
 
-    render json: @movies
+    render json: @movies, include: :characters
   end
 
   # GET /movies/1
   def show
-    render json: @movie
+    render json: @movie, include: :characters
   end
 
   # POST /movies
