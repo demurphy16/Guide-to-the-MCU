@@ -16,7 +16,7 @@ User.destroy_all
 # IRONMAN
 
 @IronMan = Character.create(
-  name: 'Tony Start',
+  name: 'Tony Stark',
   description: '',
   origin: 'Earth',
   powers: '',
@@ -30,7 +30,7 @@ User.destroy_all
   origin: 'Earth',
   powers: '',
   status: 'Villian',
-  rank: 8,
+  rank: 5,
   accessory: 'Iron Monger Suit'
 )
 @Rhodes = Character.create(
@@ -39,7 +39,7 @@ User.destroy_all
   origin: 'Earth',
   powers: '',
   status: 'Hero', 
-  rank: 2,
+  rank: 5,
   accessory: 'Iron Patriot Suit'
 )
 @Pepper = Character.create(
@@ -48,7 +48,7 @@ User.destroy_all
   origin: 'Earth', 
   powers: 'none', 
   status: 'Hero', 
-  rank: 0, 
+  rank: 1, 
   accessory: 'none', 
   )
 @Yinsen = Character.create(
@@ -57,8 +57,32 @@ User.destroy_all
   origin: 'Earth', 
   powers: 'none', 
   status: 'Hero', 
-  rank:'1',  
+  rank:1,  
   accessory: 'none', 
+)
+@Jarvis = Character.create(
+  name: 'J.A.R.V.I.S.',
+  description: '',
+  origin: 'Tony Starks basement',
+  status: 'Hero',
+  rank: 4,
+  accessory: ''
+)
+@Coulson = Character.create(
+  name: 'Phil Coulson',
+  description: '',
+  origin: 'Earth',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
+)
+@Howard = Character.create(
+  name: 'Howard Stark',
+  description: '',
+  origin: 'Earth',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
 )
 
 # HULK
@@ -97,7 +121,132 @@ User.destroy_all
   accessory: ''
 )
 
+# Iron Man 2
 
+
+@Happy = Character.create(
+  name: '',
+  description: '',
+  origin: '',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+@Ivan = Character.create(
+  name: '',
+  description: '',
+  origin: '',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+@BlackWidow = Character.create(
+  name: '',
+  description: '',
+  origin: '',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+@Fury = Character.create(
+  name: '',
+  description: '',
+  origin: '',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+
+# Thor Movie
+
+@Thor = Character.create(
+  name: 'Thor Odinson',
+  description: '',
+  origin: 'Asgaurd',
+  status: 'Hero',
+  rank: 9,
+  accessory: 'Mjolnir'
+)
+@Loki = Character.create(
+  name: 'Loki',
+  description: '',
+  origin: 'Jotunheim',
+  status: '',
+  rank: 1,
+  accessory: ''
+)
+@Odin = Character.create(
+  name: 'Odin',
+  description: '',
+  origin: 'Asgaurd',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
+)
+@Jane = Character.create(
+  name: 'Jane Foster',
+  description: '',
+  origin: 'Earth',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
+)
+@Heimdall = Character.create(
+  name: 'Heimdall',
+  description: '',
+  origin: 'Asgaurd',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
+)
+@Destroyer = Character.create(
+  name: 'Destroyer',
+  description: '',
+  origin: 'Asgaurd',
+  status: 'Villian',
+  rank: 5,
+  accessory: ''
+)
+@Selvig = Character.create(
+  name: 'Erik Selvig',
+  description: '',
+  origin: 'Earth',
+  status: 'Hero',
+  rank: 1,
+  accessory: ''
+)
+@Laufey = Character.create(
+  name: 'Laufey',
+  description: '',
+  origin: 'Jotunheim',
+  status: 'Villian',
+  rank: 1,
+  accessory: ''
+)
+@Hawkeye = Character.create(
+  name: 'Clint Barton',
+  description: '',
+  origin: 'Earth',
+  status: 'Hero',
+  rank: 4,
+  accessory: 'Bow'
+)
+@Frigga = Character.create(
+  name: 'Frigga',
+  description: '',
+  origin: 'Asgaurd',
+  status: 'Hero',
+  rank: 6,
+  accessory: ''
+)
+
+# Captain America The First Avenger
+
+
+
+
+
+# Movies
 
 
 
@@ -107,46 +256,46 @@ User.destroy_all
   ImgUrl: '',
   duration: 126,
   position: 1,
-  characters: [@IronMan, @Obadiah, @Rhodes, @Pepper, @Yinsen]
+  characters: [@IronMan, @Obadiah, @Rhodes, @Pepper, @Yinsen, @Jarvis, @Coulson]
 )
 @TheIncredibleHulk = Movie.create(
   title: 'The Indredible Hulk',
   description: '',
   ImgUrl: '',
-  duration: '2h 15m',
+  duration: 135,
   position: 2,
   characters: [@Hulk, @Abomination, @Ross, @Sterns]
-  )
+)
+@IronMan2 = Movie.create(
+  title: 'Iron Man 2',
+  description: '',
+  ImgUrl: '',
+  duration: 124,
+  position: 3,
+  characters: [@IronMan, @Pepper, @Happy, @Ivan, @Jarvis, @Fury, @BlackWidow, @Coulson, @Howard]
+)
+@ThorMovie = Movie.create(
+  title: 'Thor the Dark World',
+  description: '',
+  ImgUrl: '',
+  duration: 115,
+  position: 4,
+  characters: [@Thor, @Frigga, @Fury, @Loki, @Odin, @Jane, @Selvig, @Coulson, @Hawkeye, @Laufey, @Heimdall, @Destroyer]
+)
+@CaptainAmerica_Movie = Movie.create(
+  title: 'Captain America: The First Avenger',
+  description: '',
+  ImgUrl: '',
+  duration: 124,
+  position: 5,
+  characters: []
+)
 
 puts "#{Movie.count} movies created"
 puts "#{Character.count} characters created"
 
 
-# @IronMan = Movie.create(
-#   title: 'Iron Man', 
-#   imgUrl: 'https://images.unsplash.com/photo-1507629479746-d7ac4064838d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8aXJvbm1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', 
-#   duration: '2h 6m', 
-#   position: 1
-#   )
 # 
-# @IronMan2 = Movie.create(
-#   title: 'Iron Man 2',
-#   imgUrl: ,
-#   duration: '2h 4m',
-#   position: 3
-#   )
-# @Thor_Movie = Movie.create(
-#   title: 'Thor',
-#   imgUrl: ,
-#   duration: '1h 55m',
-#   position: 4
-#   )
-# @CaptainAmerica_Movie = Movie.create(
-#   title: 'Captain America: The First Avenger',
-#   imgUrl: ,
-#   duration: '2h 4m',
-#   position: 5
-#   )
 # @Avengers = Movie.create(
 #   title: 'The Avengers',
 #   imgUrl: ,
