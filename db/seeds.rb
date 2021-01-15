@@ -17,16 +17,20 @@ User.destroy_all
 
 @IronMan = Character.create(
   name: 'Tony Stark',
-  description: '',
+  description: 'Billionaire, playboy, genius, philanthropist. The son of Howard Stark, Tony is the first major character 
+  the MCU is introduced to. His development from privatizing weapons to privatizing world peace is unmatched
+  throughout the universe and he plays a key role in the foundation of the Avengers',
   origin: 'Earth',
-  powers: '',
+  powers: 'Genius Level Intellect, Rich',
   status: 'Hero',
-  rank: 9,
+  rank: 8.5,
   accessory: 'Iron Man Suit'
 )
 @Obadiah = Character.create(
   name: 'Obadiah Stane',
-  description: '',
+  description: 'With a name like Obadiah Stane, it was obvious from the start he was the villian. A quick turn
+  from father figure to jealous uncle lead Obadiah to create the Iron Monger suit in an attempt to rival Tony Starks Iron Man.
+  Stane"s aspirations to take over Stark Industries fell short and died, just like he did.',
   origin: 'Earth',
   powers: '',
   status: 'Villian',
@@ -37,7 +41,7 @@ User.destroy_all
   name: 'James Rhodes', 
   description: '', 
   origin: 'Earth',
-  powers: '',
+  powers: 'Friend of Tony Stark',
   status: 'Hero', 
   rank: 5,
   accessory: 'Iron Patriot Suit'
@@ -53,7 +57,8 @@ User.destroy_all
   )
 @Yinsen = Character.create(
   name: 'Yinsen', 
-  description:'', 
+  description:'Who could forget Yinsen? Probably a lot of people. Although his time was short-lived in the MCU,
+  his sacrifice for Tonys escape might be the most important sacrifice made throughout the first four phases.', 
   origin: 'Earth', 
   powers: 'none', 
   status: 'Hero', 
@@ -62,7 +67,7 @@ User.destroy_all
 )
 @Jarvis = Character.create(
   name: 'J.A.R.V.I.S.',
-  description: '',
+  description: 'Just a rather very intelligent system, Jarvis is an Iron Mans best friend.',
   origin: 'Tony Starks basement',
   status: 'Hero',
   rank: 4,
@@ -74,7 +79,7 @@ User.destroy_all
   origin: 'Earth',
   status: 'Hero',
   rank: 1,
-  accessory: ''
+  accessory: 'Captain America Trading Cards'
 )
 @Howard = Character.create(
   name: 'Howard Stark',
