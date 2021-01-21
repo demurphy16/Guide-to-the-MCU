@@ -1,6 +1,6 @@
-import "./App.css";
-import { Route, Switch } from "react-router-dom";
-import Home from "./Screens/Home/Home";
+import './App.css';
+import {Route, Switch} from 'react-router-dom'
+import Home from './Screens/Home/Home';
 import Movies from "./Screens/Movies/Movies";
 import Characters from "./Screens/Characters/Characters";
 

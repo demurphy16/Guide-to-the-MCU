@@ -1,8 +1,10 @@
 import { useEffect, useState} from 'react'
 import { getAllCharacters } from '../../Services/characters'
 import './Characters.css'
+
 function Characters() {
   const [characters, setCharacters] = useState([])
+  
   useEffect(() => {
     const fetchCharacters = async () => {
       const characterData = await getAllCharacters()
@@ -11,9 +13,11 @@ function Characters() {
     }
     fetchCharacters()
   }, [])
+
+  
   return (
     <div>
-        {characters.map(character =>
+        {characters.map(character => 
           <div>
             <p>{character.name}</p>
             <p>{character.description}</p>
