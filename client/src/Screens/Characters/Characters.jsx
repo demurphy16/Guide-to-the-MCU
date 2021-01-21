@@ -19,6 +19,7 @@ function Characters() {
     <div>
         {characters.map(character => 
           <div>
+            <h1>Characters</h1>
             <p>{character.name}</p>
             <p>{character.description}</p>
             <p>{character.origin}</p>
