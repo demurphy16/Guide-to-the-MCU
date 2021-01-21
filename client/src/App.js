@@ -1,11 +1,15 @@
-import './App.css';
-import {Route} from 'react-router-dom'
-import Home from './Screens/Home/Home';
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import Home from "./Screens/Home/Home";
+import Movies from "./Screens/Movies/Movies";
 
 function App() {
   return (
     <div className="App">
-        <Route exact path='/' component={Home}/>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/movies" component={Movies} />
+      </Switch>
     </div>
   );
 }
