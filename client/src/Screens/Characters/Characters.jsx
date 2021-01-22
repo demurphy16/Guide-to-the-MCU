@@ -16,17 +16,16 @@ function Characters() {
 
   
   return (
-    <div>
+    <div className="character-page-container">
         {characters.map(character => 
-          <div>
-            <h1>Characters</h1>
-            <p>{character.name}</p>
-            <p>{character.description}</p>
-            <p>{character.origin}</p>
-            <p>{character.powers}</p>
-            <p>{character.status}</p>
-            <p>{character.rank}</p>
-            <p>{character.accessory}</p>
+          <div className="characters-div">
+            <p className="char-item">Name: {character.name}</p>
+            <p className="char-item">Description: {character.description}</p>
+            <p className="char-item">Home Planet: {character.origin}</p>
+            <p className="char-item">Powers: {character.powers}</p>
+            <p className="char-item">Status: {character.status}</p>
+            <p className="char-item">Power Rank: {character.rank}</p>
+            <p className="char-item">Notable Acessory {character.accessory}</p>
           </div>
         )}
     </div>

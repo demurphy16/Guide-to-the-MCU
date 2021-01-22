@@ -1,0 +1,9 @@
+.character-page-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.characters-div {
+  border: 1px solid green;
+}

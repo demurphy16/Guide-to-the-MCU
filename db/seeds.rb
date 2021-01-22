@@ -17,9 +17,8 @@ User.destroy_all
 
 @IronMan = Character.create(
   name: 'Tony Stark',
-  description: 'Billionaire, playboy, genius, philanthropist. The son of Howard Stark, Tony is the first major character 
-  the MCU is introduced to. His development from privatizing weapons to privatizing world peace is unmatched
-  throughout the universe and he plays a key role in the foundation of the Avengers',
+  description: 'Billionaire, playboy, genius, philanthropist. His development from privatizing weapons to privatizing world peace is unmatched
+  throughout the universe.',
   origin: 'Earth',
   powers: 'Genius Level Intellect, Rich',
   status: 'Hero',
@@ -31,14 +30,14 @@ User.destroy_all
   description: '',
   powers: '',
   status: 'Villian',
-  rank: 5,
+  rank: 4,
   accessory: 'Iron Monger Suit'
 )
 @Rhodes = Character.create(
   name: 'James Rhodes', 
   description: '', 
   origin: 'Earth',
-  powers: 'Friend of Tony Stark',
+  powers: "Tony Stark's Friend",
   status: 'Hero', 
   rank: 5,
   accessory: 'Iron Patriot Suit'
@@ -59,7 +58,7 @@ User.destroy_all
   origin: 'Earth', 
   powers: 'none', 
   status: 'Hero', 
-  rank:1,  
+  rank: 1,  
   accessory: 'none', 
 )
 @Jarvis = Character.create(
@@ -67,7 +66,7 @@ User.destroy_all
   description: 'Just a rather very intelligent system, Jarvis is an Iron Mans best friend.',
   origin: 'Tony Starks basement',
   status: 'Hero',
-  rank: 4,
+  rank: 5,
   accessory: ''
 )
 @Coulson = Character.create(
