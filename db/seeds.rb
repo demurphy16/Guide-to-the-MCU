@@ -27,10 +27,14 @@ User.destroy_all
 )
 @Obadiah = Character.create(
   name: 'Obadiah Stane',
-  description: '',
-  powers: '',
+  description: 'Obadiah was a loyal business partner and friend to Tony and Howard Stark. After
+  Howards death and Tonys takeover of Stark Industries, Obadiah grew tired of always being second.
+  In an effort to take over Stark Industries for good, Stane hired the Ten Rings, a terrorist organization in Afghanistan,
+  to capture and kill Tony. When his plan led Tony to the creation of the Iron Man suit, Obadiah attempted
+  to create a suit of his own, The Iron Monger.',
+  powers: 'Intelligente, Money',
   status: 'Villian',
-  rank: 4,
+  rank: 3,
   accessory: 'Iron Monger Suit'
 )
 @Rhodes = Character.create(
@@ -126,7 +130,7 @@ User.destroy_all
 
 
 @Happy = Character.create(
-  name: '',
+  name: 'Happy',
   description: '',
   origin: '',
   status: '',
@@ -134,7 +138,7 @@ User.destroy_all
   accessory: ''
 )
 @Ivan = Character.create(
-  name: '',
+  name: 'Ivan',
   description: '',
   origin: '',
   status: '',
@@ -142,7 +146,7 @@ User.destroy_all
   accessory: ''
 )
 @BlackWidow = Character.create(
-  name: '',
+  name: 'Natasha Rominov',
   description: '',
   origin: '',
   status: '',
@@ -150,7 +154,7 @@ User.destroy_all
   accessory: ''
 )
 @Fury = Character.create(
-  name: '',
+  name: 'Nicholus Fury',
   description: '',
   origin: '',
   status: '',
