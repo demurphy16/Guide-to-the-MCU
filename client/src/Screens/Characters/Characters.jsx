@@ -19,13 +19,13 @@ function Characters() {
     <div className="character-page-container">
         {characters.map(character => 
           <div className="characters-div">
-            <p className="char-item">Name: {character.name}</p>
-            <p className="char-item">Description: {character.description}</p>
-            <p className="char-item">Home Planet: {character.origin}</p>
-            <p className="char-item">Powers: {character.powers}</p>
-            <p className="char-item">Status: {character.status}</p>
-            <p className="char-item">Power Rank: {character.rank}</p>
-            <p className="char-item">Notable Acessory {character.accessory}</p>
+            <p className="char-item char-name">Name: {character.name}</p>
+            {/* <p className="char-item char-dec">Description: {character.description}</p> */}
+            <p className="char-item char-origin">Home Planet: {character.origin}</p>
+            <p className="char-item char-power">Powers: {character.powers}</p>
+            <p className="char-item char-status">Status: {character.status}</p>
+            <p className="char-item char-rank">Power Rank: {character.rank}</p>
+            <p className="char-item char-acc">Notable Acessory: {character.accessory}</p>
           </div>
         )}
     </div>

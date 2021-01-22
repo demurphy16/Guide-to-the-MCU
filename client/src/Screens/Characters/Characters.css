@@ -5,5 +5,16 @@
   flex-flow: row wrap;
 }
 .characters-div {
-  border: 1px solid green;
+  box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.817);
+  border: 2px solid rgba(145, 145, 145, 0.824);
+  min-height: 60vh;
+  min-width: 342px;
+  max-width: 342px;
+  margin: 5vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.char-name {
+  /* margin-top: 3vh; */
 }
